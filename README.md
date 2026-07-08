@@ -55,7 +55,7 @@ Microsoft Store Repair is a PowerShell script with a clean WPF GUI that automate
 
    ```powershell
    git clone https://github.com/m121752332/msstore-repair-tool.git
-   cd msstore-repair-wpf
+   cd msstore-repair-tool
    ```
 
 2. **Run** the script:
