@@ -168,5 +168,6 @@ Free to use, modify, and distribute. A mention is always appreciated. 🙂
 
 <div align="center">
 **Made with ❤️ by Gimmy & Tiger**
+
 *Gimmy Pignolo · Tiger · Windows 11 · PowerShell · WPF*
 </div>
