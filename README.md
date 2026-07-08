@@ -1,6 +1,6 @@
 # 🛠️ Microsoft Store Repair
 
-> **A modern WPF tool to fix Microsoft Store issues on Windows 10/11 — built by Gimmy & Claude.**
+> **A modern WPF tool to fix Microsoft Store issues on Windows 10/11 — built by Gimmy & Tiger.**
 
 [![Version](https://img.shields.io/badge/version-3.0.0-0078D4?style=flat-square)](https://github.com/gmy77/msstore-repair-wpf/releases/latest)
 [![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
@@ -21,7 +21,7 @@ Microsoft Store Repair is a PowerShell script with a clean WPF GUI that automate
 ## 🚀 Features
 
 | Feature | Description |
-|---|---|
+| --- | --- |
 | ⚡ Reset Cache | Runs `wsreset.exe` with a 60-second timeout guard |
 | 🔄 Restart Services | Restarts 5 Store-related Windows services with status tracking |
 | 🗑️ Clear LocalCache | Wipes the Store LocalCache folder (closes Store processes first) |
@@ -51,13 +51,15 @@ Microsoft Store Repair is a PowerShell script with a clean WPF GUI that automate
 
 ## ▶️ Quick Start
 
-1. **Download** the latest release ZIP from the [Releases page](https://github.com/gmy77/msstore-repair-wpf/releases/latest) and extract it — or clone the repo:
+1. **Download** the latest release ZIP from the [Releases page](https://github.com/m121752332/msstore-repair-tool/releases) and extract it — or clone the repo:
+
    ```powershell
-   git clone https://github.com/gmy77/msstore-repair-wpf.git
+   git clone https://github.com/m121752332/msstore-repair-tool.git
    cd msstore-repair-wpf
    ```
 
 2. **Run** the script:
+
    ```powershell
    Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
    .\MSStoreRepair.ps1
@@ -71,7 +73,7 @@ Microsoft Store Repair is a PowerShell script with a clean WPF GUI that automate
 
 ## 🖥️ Interface
 
-```
+```plain
 ┌─────────────────────────────────────────────────────────────────┐
 │  🛠️ Microsoft Store Repair          [v3.0.0]  [✔ Admin]         │
 ├──────────────────┬──────────────────────────────────────────────┤
@@ -98,8 +100,8 @@ Microsoft Store Repair is a PowerShell script with a clean WPF GUI that automate
 
 ## 📁 File Structure
 
-```
-msstore-repair-wpf/
+```plain
+msstore-repair-tool/
 ├── MSStoreRepair.ps1     ← main script (single file, no dependencies)
 ├── config.json           ← auto-created on first run (saves font size etc.)
 ├── logs/
@@ -113,7 +115,7 @@ msstore-repair-wpf/
 
 ## 📝 Log Format
 
-```
+```plain
 [2026-05-27 18:57:47] [Info]    Starting: Full Repair
 [2026-05-27 18:57:47] [Info]    Launching wsreset.exe...
 [2026-05-27 18:57:52] [Success] Cache reset completed
@@ -126,7 +128,7 @@ msstore-repair-wpf/
 ## 🔧 Troubleshooting
 
 | Problem | Solution |
-|---|---|
+| --- | --- |
 | `Appx cmdlets not available` | Use Windows PowerShell 5.1, not PowerShell 7 |
 | `wsreset.exe timeout` | The tool kills it after 60s automatically and continues |
 | `Access Denied` on cache clear | Make sure you're running as Administrator |
@@ -140,6 +142,7 @@ msstore-repair-wpf/
 See [CHANGELOG.md](CHANGELOG.md) for the full version history.
 
 **Latest — v3.0.0:**
+
 - Complete UI redesign with Windows 11 accent colors and custom button styles
 - Color-coded RichTextBox log (green / amber / red per level)
 - Font size slider with persistent preference saved to `config.json`
@@ -155,8 +158,8 @@ See [CHANGELOG.md](CHANGELOG.md) for the full version history.
 
 MIT License — see [LICENSE](LICENSE) for full text.
 
-```
-Copyright (c) 2026 Gimmy Pignolo & Claude (Anthropic)
+```plain
+Copyright (c) 2026 Gimmy Pignolo & Tiger
 ```
 
 Free to use, modify, and distribute. A mention is always appreciated. 🙂
@@ -164,9 +167,6 @@ Free to use, modify, and distribute. A mention is always appreciated. 🙂
 ---
 
 <div align="center">
-
-**Made with ❤️ by Gimmy & Claude**
-
-*Gimmy Pignolo · Claude (Anthropic) · Windows 11 · PowerShell · WPF*
-
+**Made with ❤️ by Gimmy & Tiger**
+*Gimmy Pignolo · Tiger · Windows 11 · PowerShell · WPF*
 </div>
